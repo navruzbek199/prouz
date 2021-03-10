@@ -363,8 +363,8 @@ textarea.app__winput {
   margin-bottom: 2rem;
 }
 
-input[type="text"],
-input[type="password"] {
+.authorization__-input input[type="text"],
+.authorization__-input input[type="password"] {
   background: #1d5371;
   font-size: 1.2em;
   margin-bottom: 1rem;
