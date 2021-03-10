@@ -1,0 +1,67 @@
+.table th,
+.table td {
+  border-top-color: #ebeff4;
+
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.table {
+  td {
+    @include mq("tablet-wide", max) {
+      min-width: 150px;
+    }
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  .danger-zone {
+    td {
+      @include mq("tablet", max) {
+        min-width: 150px;
+      }
+      color: #ad0015;
+    }
+  }
+}
+
+.charts {
+  height: 220px;
+}
+
+/* NEW */
+
+.icon__mr {
+  margin-right: 5px;
+}
+
+.pro__form .custom-control {
+  margin-bottom: 10px;
+}
+
+.pro__block {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#invoice-customer-details {
+  .form-group {
+    margin-right: 0 !important;
+  }
+
+  font-size: 16px;
+  font-weight: 400;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .recipient-info {
+    margin-bottom: 10px;
+  }
+}

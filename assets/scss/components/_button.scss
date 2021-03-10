@@ -1,0 +1,30 @@
+/* PRO BUTTONS =========================================================== */
+.pro__btn {
+  min-width: 200px;
+  display: inline-block;
+}
+
+.pro__btn i {
+  top: 1px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.btn {
+  &-danger {
+    background-color: #ad0015 !important;
+    border-color: #ad0015 !important;
+  }
+}
+
+.back-to {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #263238;
+  i {
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+  }
+}

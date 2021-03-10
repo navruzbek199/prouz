@@ -1,0 +1,515 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+/* BUTTON MIXIN 
+============================================= */
+.card-two.active .media::after {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* PRO BUTTONS =========================================================== */
+.pro__btn {
+  min-width: 200px;
+  display: inline-block;
+}
+
+.pro__btn i {
+  top: 1px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.btn-danger {
+  background-color: #ad0015 !important;
+  border-color: #ad0015 !important;
+}
+
+.back-to {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #263238;
+}
+.back-to i {
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+}
+
+.table th,
+.table td {
+  border-top-color: #ebeff4;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .table td {
+    min-width: 150px;
+  }
+}
+
+.table td:first-of-type {
+  padding-left: 0;
+}
+
+.table td:last-of-type {
+  padding-right: 0;
+}
+
+.table .danger-zone td {
+  color: #ad0015;
+}
+@media only screen and (max-width: 767px) {
+  .table .danger-zone td {
+    min-width: 150px;
+  }
+}
+
+.charts {
+  height: 220px;
+}
+
+/* NEW */
+.icon__mr {
+  margin-right: 5px;
+}
+
+.pro__form .custom-control {
+  margin-bottom: 10px;
+}
+
+.pro__block {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#invoice-customer-details {
+  font-size: 16px;
+  font-weight: 400;
+}
+#invoice-customer-details .form-group {
+  margin-right: 0 !important;
+}
+#invoice-customer-details p {
+  margin-bottom: 0px;
+}
+#invoice-customer-details .recipient-info {
+  margin-bottom: 10px;
+}
+
+/* STYLES */
+.app__block_firefront {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.form-group {
+  margin: 0 !important;
+  margin-right: 10px !important;
+}
+
+.form-control {
+  font-size: 1rem;
+}
+.form-control::placeholder {
+  color: #333;
+  opacity: 1;
+  font-size: 14px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.total__payment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 60px 0 30px;
+}
+@media only screen and (max-width: 767px) {
+  .total__payment {
+    margin: 20px 0px 0;
+  }
+  .total__payment input {
+    margin-left: 0 !important;
+  }
+}
+
+.total__payment label {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.total__payment input {
+  width: 170px;
+  font-size: 20px;
+  margin-left: 10px;
+  background: #fff !important;
+}
+
+.card-two .media {
+  background: #f9fbfe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+.card-two .media-body h2 {
+  color: #033f61;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card-two.active .media {
+  position: relative;
+}
+.card-two.active .media::after {
+  content: url("../img/check-icon.png");
+  position: absolute;
+  right: 20px;
+  top: 55%;
+  z-index: 11;
+}
+
+.app-logo {
+  max-width: 100px;
+  height: auto;
+  transition: 300ms ease all;
+}
+
+.main-menu .navbar-header {
+  height: auto;
+}
+@media only screen and (min-width: 768px) {
+  .main-menu .navbar-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
+  width: 285px;
+}
+
+.header-navbar.floating-nav {
+  width: calc(100vw - (100vw - 100%) - calc(2.2rem * 2) - 280px);
+}
+
+html body .content {
+  margin-left: 280px;
+}
+
+.menu-collapsed .app-logo {
+  max-width: 50px;
+  height: auto;
+}
+
+.menu-collapsed .main-menu .navbar-header {
+  padding-left: 1.1rem;
+}
+
+html body {
+  background-color: #f9fbfe;
+}
+
+.card {
+  border: 1px solid rgba(105, 96, 150, 0.1);
+  border-radius: 16px;
+  box-shadow: unset;
+}
+
+.navigation {
+  font-size: 1.5rem;
+  font-family: "TT Commons", Helvetica, Arial, serif;
+  font-weight: 500;
+}
+.navigation .nav-item .menu-content .menu-item {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-outline-primary {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: #fff;
+}
+.btn-outline-primary:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border-color: #fff;
+}
+
+.chart-btn-group button {
+  margin-right: 4px;
+}
+.chart-btn-group button i {
+  font-size: 28px;
+}
+
+.app__winput {
+  width: 280px !important;
+  max-width: 100% !important;
+}
+
+textarea.app__winput {
+  height: 100px;
+  min-height: 100px !important;
+}
+
+.delivery__map {
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  border: 0;
+}
+
+.icon__ml {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .app__block_firefront > div {
+    width: 100%;
+  }
+  .app__block_firefront .form-label-group {
+    width: 100% !important;
+  }
+  .app__block_firefront .form-label-group input {
+    width: 100% !important;
+    display: block;
+  }
+}
+
+.app__table_tr {
+  width: 50px;
+}
+
+.scane-img {
+  border-radius: 20px;
+  border: 1px solid rgba(105, 96, 150, 0.1);
+  width: 320px;
+  height: 320px;
+}
+@media only screen and (max-width: 767px) {
+  .scane-img {
+    width: 100%;
+  }
+}
+.scane-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.authorization {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #024870;
+  position: relative;
+}
+
+.authorization__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.authorization__title {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 auto 2rem auto;
+}
+
+.authorization__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.authorization__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: #1d5371;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+  padding-left: 4rem;
+  color: #fff;
+}
+input::placeholder {
+  color: #ffffff;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+input:active {
+  outline: 0;
+}
+input:hover {
+  outline: 0;
+}
+
+input:focus {
+  outline: 0;
+  background-color: #1d5371;
+  color: #fff;
+}
+
+.authorization__name-input {
+  position: relative;
+  width: 315px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.authorization__name-input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  margin: auto 0;
+  width: 30px;
+  height: 35px;
+  background: url("/assets/img/login-img.png") no-repeat;
+  background-size: cover;
+}
+
+.authorization__password-input {
+  position: relative;
+  width: 315px;
+  height: 50px;
+}
+
+.authorization__password-input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 18px;
+  margin: auto 0;
+  width: 27px;
+  height: 35px;
+  background: url("/assets/img/password-img.png") no-repeat;
+  background-size: cover;
+}
+
+.save-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.save-checkbox__input {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.save-checkbox__label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+
+.authorization__btn {
+  background-color: #fff !important;
+  color: #033f61;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.authorization__btn:hover {
+  background-color: #033f61 !important;
+  color: #fff;
+}
+
+.authorization__btn:active {
+  background-color: #033f61 !important;
+  color: #fff !important;
+}
+.authorization__btn:focus {
+  background-color: #033f61 !important;
+  color: #fff !important;
+}
+
+.authorization__footer {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  text-align: center;
+}
+
+.authorization__footer a {
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.authorization__footer a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.footer__support-contact {
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.footer__user-guide {
+  color: #fff;
+   text-decoration: underline;
+}
+
+.footer__user-guide:hover {
+  text-decoration: underline;
+}

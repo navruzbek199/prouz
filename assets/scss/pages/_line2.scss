@@ -1,0 +1,47 @@
+ .app__winput
+{
+    width: 280px!important;
+    max-width: 100%!important;
+}
+ 
+textarea.app__winput
+{
+    height: 100px;
+    min-height: 100px!important;
+}
+  
+.delivery__map
+{
+    position: relative;
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    border: 0;
+}
+
+.icon__ml
+{
+    margin-left: 5px;
+}
+
+.app__block_firefront {
+    @include mq('tablet', max) {
+        &>div {
+            width: 100%;
+        }
+        .form-label-group {
+            width: 100% !important;
+            input {
+            width: 100% !important;
+
+                display: block;
+            }
+
+        }
+    }
+}
+
+.app__table_tr
+{
+    width: 50px;
+}
