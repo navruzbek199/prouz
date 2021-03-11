@@ -542,6 +542,10 @@ input:focus {
   }
   .authorization__btn {
     width: 90%;
+    margin-bottom: 2rem;
+  }
+  .footer__support-contact {
+    padding-bottom: .7rem;
   }
 }
 
