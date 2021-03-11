@@ -516,6 +516,35 @@ input:focus {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 321px) {
+  .authorization__name-input {
+    display: flex;
+    justify-content: center;
+  }
+  .authorization__name-input:before {
+    left: 27px;
+  }
+  .authorization__name {
+    width: 90%!important;
+  }
+  .authorization__password-input {
+    display: flex;
+    justify-content: center;
+  }
+  .authorization__password-input:before {
+    left: 30px;
+  }
+  .authorization__password {
+    width: 90%!important;
+  }
+  .save-checkbox {
+    width: 85%;
+  }
+  .authorization__btn {
+    width: 90%;
+  }
+}
+
 /* -----------------------------------------------------main-page------------------------------------------------ */
 
 .advertising__img {
