@@ -516,7 +516,7 @@ input:focus {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 376px) {
   .authorization__name-input {
     display: flex;
     justify-content: center;
