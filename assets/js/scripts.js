@@ -42,7 +42,7 @@
 
   chart.render();
 
-  var options2= {
+  var options2 = {
     chart: {
       height: 250,
       type: "radialBar",
@@ -83,7 +83,7 @@
 
   chart2.render();
 
-  
+
   // Avg Session Chart Starts
   // ----------------------------------
   var $primary = '#033F61';
@@ -145,7 +145,7 @@
   );
 
   sessionChart.render();
-
+  
   // Avg Session Chart ends //
 
   /*
@@ -154,3 +154,4 @@
   PLACE HERE YOUR OWN JAVASCRIPT CODE IF NEEDED
   WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR JAVASCRIPT CODE PLEASE CONSIDER WRITING YOUR SCRIPT HERE.  */
 })(window);
+

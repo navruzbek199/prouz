@@ -22,6 +22,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/fonts/tt-commons/stylesheet.css">
+    <link rel="stylesheet" href="app-assets/fonts/font-awesome-5-pro/css/all.min.css">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
@@ -66,12 +67,13 @@
                             <li class="nav-item mobile-menu d-xl-none mr-auto"><a
                                     class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                                         class="ficon feather icon-menu"></i></a></li>
+                            <li class="d-none main-title d-sm-flex align-items-center" title="Main">Главное</li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
-                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i
-                                    class="ficon feather icon-maximize" title="Full screen"></i></a></li>
-                        <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i
+                        <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i
+                                    class="ficon feather icon-maximize" title="Full screen"></i></a></li> -->
+                        <!-- <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i
                                     class="ficon feather icon-search" title="Search"></i></a>
                             <div class="search-input">
                                 <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
@@ -80,21 +82,24 @@
                                 <div class="search-input-close"><i class="feather icon-x"></i></div>
                                 <ul class="search-list search-list-main"></ul>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="nav-item nav-search">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="print.html">
                                 <img src="assets/img/print.svg" alt="Scan" width="22" height="22" title="Scaner">
                             </a>
                         </li>
 
                         <li class="nav-item nav-search">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="scan.html">
                                 <img src="assets/img/scan.svg" alt="Scan" width="22" height="22" title="Scaner">
                             </a>
                         </li>
                         <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
-                                data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span
-                                    class="badge badge-pill badge-primary badge-up">5</span></a>
+                                data-toggle="dropdown">
+                                <!-- <i class="ficon feather icon-bell"></i> -->
+                                <i class="fas fa-bell"></i>
+                                <span class="badge badge-pill badge-primary badge-up">5</span>
+                            </a>
                             <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                                 <li class="dropdown-menu-header">
                                     <div class="dropdown-header m-0 p-2">
@@ -166,12 +171,14 @@
                             </ul>
                         </li>
                         <li class="dropdown dropdown-user nav-item">
-                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#">
+                            <a class="dropdown-toggle nav-link w-100 dropdown-user-link" href="#">
                                 <div class="user-nav d-sm-flex d-none"></div>
                                 <span>
                                     <img class="round" src="app-assets/images/portrait/small/avatar-s-11.jpg"
                                         alt="avatar" height="40" width="40">
                                 </span>
+                                <span class="badge badge-pill badge-primary badge-down">5</span>
+                                <span class="user-name d-none d-md-block">Rishad Khakimov</span>
                             </a>
                         </li>
                     </ul>
@@ -287,12 +294,12 @@
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto">
                     <a class="navbar-brand" href="./main-page.html">
-                        <img class="app-logo" src="assets/img/app-logo.svg" alt="Logo">
+                        <img class="app-logo" src="assets/img/logo-white.png" alt="Logo">
                     </a>
                 </li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
                             class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i
-                            class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary"
+                            class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon"
                             data-ticon="icon-disc"></i></a></li>
             </ul>
         </div>
@@ -365,6 +372,11 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-header row">
+                <form>
+                    <div class="form-group date-group">
+                        <input type="date" class="form-control date-input" title="Выберите дату" value="2021-03-12">
+                    </div>
+                </form>
             </div>
             <div class="content-body">
 
@@ -372,26 +384,32 @@
                 <section id="dashboard-analytics">
                     <div class="row match-height">
                         <div class="col-lg-4 col-12">
-                            <div class="card">
-                                <div class="card-header d-flex justify-content-between pb-0">
+                            <div class="card card-top">
+                                <div class="card-header d-flex justify-content-center pb-0">
                                     <h3>Статистика СЧФ</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <div class="charts" id="chart1"></div>
-                                        <p class="font-weight-bold mb-3 d-block">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tristique
-                                            vulputate ipsum, sem ultrices eu etiam a bibendum. Augue tortor tortor.
-                                        </p>
+                                        <div class="dis-flex w-100">
+                                            <div class="charts" id="chart1"></div>
+                                            <p class="font-weight-bold mb-3 d-block chart-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tristique
+                                                vulputate ipsum, sem ultrices eu etiam a bibendum. Augue tortor tortor.
+                                            </p>
+                                        </div>
                                         <div class="chart-btn-group">
-                                            <button type="button"
-                                                class="btn btn-primary waves-effect waves-light">Сегодня</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary waves-effect waves-light">Неделя</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary waves-effect waves-light">Месяц</button>
-                                            <button type="button" class="btn px-1 box-shadow-0"><i
-                                                    class="fa fa-calendar text-primary font-weight-bold"></i></button>
+                                            <div class="left-buttons">
+                                                <button type="button"
+                                                    class="btn btn-primary waves-effect waves-light">Сегодня</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary waves-effect waves-light">Неделя</button>
+                                            </div>
+                                            <div class="right-buttons">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary waves-effect waves-light">Месяц</button>
+                                                <button type="button" class="btn px-1 box-shadow-0"><i
+                                                        class="fa fa-calendar text-primary font-weight-bold"></i></button>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -399,26 +417,33 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-12">
-                            <div class="card">
-                                <div class="card-header d-flex justify-content-between pb-0">
+                            <div class="card card-top">
+                                <div class="card-header d-flex justify-content-center pb-0">
                                     <h3>Статистика сотрудников</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <div class="charts" id="chart2"></div>
-                                        <p class="font-weight-bold mb-3 d-block">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tristique
-                                            vulputate ipsum, sem ultrices eu etiam a bibendum. Augue tortor tortor.
-                                        </p>
+                                        <div class="dis-flex w-100">
+                                            <div class="charts" id="chart2"></div>
+                                            <p class="font-weight-bold mb-3 d-block chart-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tristique
+                                                vulputate ipsum, sem ultrices eu etiam a bibendum. Augue tortor tortor.
+                                            </p>
+
+                                        </div>
                                         <div class="chart-btn-group">
-                                            <button type="button"
-                                                class="btn btn-primary waves-effect waves-light">Сегодня</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary waves-effect waves-light">Неделя</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary waves-effect waves-light">Месяц</button>
-                                            <button type="button" class="btn px-1 box-shadow-0"><i
-                                                    class="fa fa-calendar text-primary font-weight-bold"></i></button>
+                                            <div class="left-buttons">
+                                                <button type="button"
+                                                    class="btn btn-primary waves-effect waves-light">Сегодня</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary waves-effect waves-light">Неделя</button>
+                                            </div>
+                                            <div class="right-buttons">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary waves-effect waves-light">Месяц</button>
+                                                <button type="button" class="btn px-1 box-shadow-0"><i
+                                                        class="fa fa-calendar text-primary font-weight-bold"></i></button>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -426,26 +451,32 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-12">
-                            <div class="card">
-                                <div class="card-header d-flex justify-content-between pb-0">
+                            <div class="card card-top">
+                                <div class="card-header d-flex justify-content-center pb-0">
                                     <h3>Статус товаров</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <div class="charts" id="avg-session-chart"></div>
-                                        <p class="font-weight-bold mb-3 d-block">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tristique
-                                            vulputate ipsum, sem ultrices eu etiam a bibendum. Augue tortor tortor.
-                                        </p>
+                                        <div class="dis-flex w-100">
+                                            <div class="charts" id="avg-session-chart"></div>
+                                            <p class="font-weight-bold mb-3 d-block chart-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tristique
+                                                vulputate ipsum, sem ultrices eu etiam a bibendum. Augue tortor tortor.
+                                            </p>
+                                        </div>
                                         <div class="chart-btn-group">
-                                            <button type="button"
-                                                class="btn btn-primary waves-effect waves-light">Сегодня</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary waves-effect waves-light">Неделя</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary waves-effect waves-light">Месяц</button>
-                                            <button type="button" class="btn px-1 box-shadow-0"><i
-                                                    class="fa fa-calendar text-primary font-weight-bold"></i></button>
+                                            <div class="left-buttons">
+                                                <button type="button"
+                                                    class="btn btn-primary waves-effect waves-light">Сегодня</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary waves-effect waves-light">Неделя</button>
+                                            </div>
+                                            <div class="right-buttons">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary waves-effect waves-light">Месяц</button>
+                                                <button type="button" class="btn px-1 box-shadow-0"><i
+                                                        class="fa fa-calendar text-primary font-weight-bold"></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -475,7 +506,7 @@
                             <div class="d-flex justify-content-between pb-0 bg-transparent border-bottom-0 pl-2 mb-1">
                                 <h2>Статус</h2>
                             </div>
-                            <div class="card">
+                            <div class="card card-bottom">
                                 <div class="card-content">
                                     <div class="card-body">
                                         <!-- Invoice Recipient Details -->
@@ -580,9 +611,10 @@
                             <div class="d-flex justify-content-between pb-0 bg-transparent border-bottom-0 pl-2 mb-1">
                                 <h2>Акции</h2>
                                 <a href="create-promotion.html"
-                                    class="btn btn btn-primary waves-effect waves-light mr-0">Создать акцию</a>
+                                    class="btn promotion-btn btn-primary waves-effect waves-light mr-0">Создать
+                                    акцию</a>
                             </div>
-                            <div class="card">
+                            <div class="card card-bottom">
                                 <div class="card-content">
                                     <div class="card-body">
                                         <!-- Invoice Recipient Details -->
@@ -624,7 +656,8 @@
                                                             <button
                                                                 class="btn border-0 dropdown-toggle px-0 box-shadow-0 w-100 mr-2 font-weight-light"
                                                                 type="button" id="dropdownItem1" data-toggle="dropdown"
-                                                                aria-haspopup="true" aria-expanded="false" style="color: #000000;">
+                                                                aria-haspopup="true" aria-expanded="false"
+                                                                style="color: #000000;">
                                                                 Подробно
                                                             </button>
                                                             <div class="dropdown-menu dropdown-menu-right"
@@ -675,7 +708,8 @@
                                                             <button
                                                                 class="btn border-0 dropdown-toggle px-0 box-shadow-0 w-100 mr-2 font-weight-light"
                                                                 type="button" id="dropdownItem1" data-toggle="dropdown"
-                                                                aria-haspopup="true" aria-expanded="false" style="color: #000000;">
+                                                                aria-haspopup="true" aria-expanded="false"
+                                                                style="color: #000000;">
                                                                 Подробно
                                                             </button>
                                                             <div class="dropdown-menu dropdown-menu-right"
@@ -697,12 +731,13 @@
                             <div class="d-flex justify-content-between pb-0 bg-transparent border-bottom-0 pl-2 mb-1">
                                 <h2>Реклама</h2>
                             </div>
-                            <div class="card">
+                            <div class="card card-bottom">
                                 <div class="card-content">
                                     <div class="card-body">
                                         <img class="advertising__img" src="/assets/img/main-page(phone).png"
                                             alt="advertising">
-                                        <p class="advertising__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit aliquam
+                                        <p class="advertising__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Hendrerit aliquam
                                             nulla neque, neque. Scelerisque id ut id
                                             turpis feugiat proin. Nulla est cras phasellus ut amet, euismod.</p>
                                     </div>
@@ -734,7 +769,6 @@
     <script src="app-assets/js/core/app.js"></script>
     <script src="app-assets/js/scripts/components.js"></script>
     <!-- END: Theme JS-->
-
     <script src="assets/js/scripts.js"></script>
 
 </body>

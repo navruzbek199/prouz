@@ -190,13 +190,14 @@ label {
 }
 
 .app-logo {
-  max-width: 100px;
+  max-width: 100%;
   height: auto;
   transition: 300ms ease all;
 }
 
 .main-menu .navbar-header {
   height: auto;
+  margin-bottom: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .main-menu .navbar-header {
@@ -207,6 +208,7 @@ label {
 
 body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
   width: 285px;
+  background: #024870;
 }
 
 .header-navbar.floating-nav {
@@ -218,7 +220,7 @@ html body .content {
 }
 
 .menu-collapsed .app-logo {
-  max-width: 50px;
+  max-width: 60px;
   height: auto;
 }
 
@@ -238,7 +240,6 @@ html body {
 
 .navigation {
   font-size: 1.5rem;
-  font-family: "TT Commons", Helvetica, Arial, serif;
   font-weight: 500;
 }
 .navigation .nav-item .menu-content .menu-item {
@@ -264,6 +265,7 @@ html body {
 
 .chart-btn-group button {
   margin-right: 4px;
+  background: #f5f6fa;
 }
 .chart-btn-group button i {
   font-size: 28px;
@@ -516,7 +518,7 @@ input:focus {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 321px) {
   .authorization__name-input {
     display: flex;
     justify-content: center;
@@ -525,7 +527,7 @@ input:focus {
     left: 27px;
   }
   .authorization__name {
-    width: 90%!important;
+    width: 90% !important;
   }
   .authorization__password-input {
     display: flex;
@@ -535,17 +537,22 @@ input:focus {
     left: 30px;
   }
   .authorization__password {
-    width: 90%!important;
+    width: 90% !important;
   }
   .save-checkbox {
     width: 85%;
   }
   .authorization__btn {
     width: 90%;
-    margin-bottom: 2rem;
   }
+}
+
+@media only screen and (max-width: 376px) {
   .footer__support-contact {
-    padding-bottom: .7rem;
+    padding-bottom: 0.7rem;
+  }
+  .authorization__btn {
+    margin-bottom: 2rem;
   }
 }
 
@@ -564,3 +571,171 @@ input:focus {
   margin-top: 1rem;
 }
 
+.fa-bell {
+  font-size: 20px;
+  color: #3774ce;
+}
+
+.badge-down {
+  position: absolute;
+  top: 38px;
+  left: 58px;
+  font-size: 8px;
+  background: #2ac17e !important;
+  color: #2ac17e;
+  width: 10px;
+  height: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+  color: #2a2a2a;
+  margin-bottom: 0 !important;
+}
+
+.dropdown-user {
+  display: flex;
+  align-items: center;
+}
+
+.promotion-btn {
+  background-color: inherit !important;
+  border: none;
+  box-shadow: none;
+  color: #3774ce !important;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.promotion-btn:hover {
+  border: none !important;
+  color: #3774ce !important;
+  box-shadow: none;
+}
+.main-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  padding-left: 1rem;
+}
+
+.date-group {
+  padding: 0 0 2rem 1rem;
+}
+.date-input {
+  border: 1px solid rgba(105, 96, 150, 0.1);
+  border-radius: 10px;
+  width: 155px;
+  padding: 1rem;
+  color: #000;
+}
+
+@media only screen and (max-width: 500px) {
+  .badge-down {
+    left: 48px;
+  }
+  .badge-up {
+    right: 2px !important;
+  }
+  h3 {
+    font-size: 1.41rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .left-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .chart-btn-group {
+    display: flex;
+  }
+  .right-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .left-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card-top {
+    height: 580px;
+  }
+  .card-bottom {
+    height: 300px;
+  }
+  .chart-btn-group {
+    flex-direction: column;
+  }
+  .left-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .right-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .dis-flex {
+    display: flex;
+  }
+  .charts {
+    width: 60%;
+  }
+  .chart-text {
+    width: 50%;
+  }
+  .chart-btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .right-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .card-top {
+    height: 400px;
+  }
+  .card-bottom {
+    height: 310px;
+  }
+  .card-content {
+    height: 100%;
+  }
+
+  .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
