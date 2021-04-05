@@ -839,6 +839,23 @@ input:focus {
   border-color: #3774ce;
 }
 
+.cashbox__delete {
+  width: 130px;
+  height: 30px;
+  border: 1px solid #FC5252;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #FC5252;
+  font-size: 14px;
+}
+
+.cashbox__delete:hover {
+  color: #fff;
+  background-color: #FC5252;
+  transition: ease-in .2s; 
+}
+
+
 .cashbox__today {
   font-size: 1rem;
   font-weight: 400;
@@ -856,6 +873,14 @@ input:focus {
 }
 .cashbox__button-add {
   height: 50px;
+}
+
+.cashbox__date {
+  padding: 0;
+}
+
+.cashbox__input-number::placeholder {
+  color: #000;
 }
 
 .btn-new {

@@ -286,8 +286,8 @@
       </a></li>
   </ul>
   <!-- END: Header-->
-  
-  
+
+
   <!-- BEGIN: Main Menu-->
   <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
@@ -385,23 +385,20 @@
         <div class="card">
           <div class="card-body">
             <div class="app__block_firefront flex-md-row flex-column">
-                <!-- <fieldset class="form-group position-relative">
+              <!-- <fieldset class="form-group position-relative">
                     <input type="text" class="form-control" id="iconLeft2" placeholder="Поиск товара">
                     <div class="form-control-position">
                         <i class="feather icon-search"></i>
                     </div>
                 </fieldset> -->
 
-                <div class="d-flex">
-                    <div class="total__payment my-0 mr-2 flex-column">
-                      <h3 class="cashbox__today">Сегодня в кассе</h3>
-                      <p class="cashboy__quantity">2 340 000 сум</p>
-                    </div>
-                  </div>
-                  <fieldset>
-                    <button class="cashbox__button-check btn-new btn btn btn-primary waves-effect waves-light my-lg-0 text-center mr-1 mb-1"><img src="assets/img/cashbox__checks.png" class="pr-1" alt="Чеки">Чеки</button>
-                    <button class="cashbox__button-add btn-new btn btn btn-primary waves-effect waves-light my-lg-0 text-center mb-1"><i class="fa fa-plus mr-1"></i>Добавить транзакцию</button>
-                  </fieldset>
+              <form class="d-flex justify-content-between">
+                <div class="form-group date-group cashbox__date">
+                  <input type="date" class="form-control date-input" title="Выберите дату" value="2021-04-12">
+                </div>
+                <input class="cashbox__input-number input-number" type="number" placeholder="2 340 000" value="2 340 000">
+
+              </form>
             </div>
             <div class="table-responsive">
               <table class="table">
@@ -413,7 +410,7 @@
                     <td>Diam quis nunc faucibus tortor.</td>
                     <td>
                       <form action="">
-                        <button class="cashbox__submit">Провести</button>
+                        <button class="cashbox__delete">Удалить</button>
                       </form>
                     </td>
                   </tr>
@@ -424,7 +421,7 @@
                     <td>Diam quis nunc faucibus tortor.</td>
                     <td>
                       <form action="">
-                        <button class="cashbox__submit">Провести</button>
+                        <button class="cashbox__delete">Удалить</button>
                       </form>
                     </td>
                   </tr>
@@ -435,7 +432,7 @@
                     <td>Diam quis nunc faucibus tortor.</td>
                     <td>
                       <form action="">
-                        <button class="cashbox__submit">Провести</button>
+                        <button class="cashbox__delete">Удалить</button>
                       </form>
                     </td>
                   </tr>
@@ -446,7 +443,7 @@
                     <td>Diam quis nunc faucibus tortor.</td>
                     <td>
                       <form action="">
-                        <button class="cashbox__submit">Провести</button>
+                        <button class="cashbox__delete">Удалить</button>
                       </form>
                     </td>
                   </tr>
@@ -457,7 +454,7 @@
                     <td>Diam quis nunc faucibus tortor.</td>
                     <td>
                       <form action="">
-                        <button class="cashbox__submit">Провести</button>
+                        <button class="cashbox__delete">Удалить</button>
                       </form>
                     </td>
                   </tr>
@@ -468,6 +465,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- END: Content-->
 
