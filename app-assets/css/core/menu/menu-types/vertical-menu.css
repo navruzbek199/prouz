@@ -276,7 +276,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .footer {
 }
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.floating-nav {
-  width: calc(100vw - (100vw - 100%) - 4.4rem - 80px);
+  width: calc(100vw - (100vw - 100%) - 0rem - 80px);
 }
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.navbar-static-top {
@@ -454,7 +454,8 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .footer {
 }
 
 .vertical-overlay-menu .navbar.header-navbar.floating-nav {
-  width: calc(100vw - (100vw - 100%) - calc(2.2rem * 2));
+  width: calc(100vw - (100vw - 100%) - calc(2rem * 2));
+  margin-right: 2rem;
 }
 
 .vertical-overlay-menu .main-menu,

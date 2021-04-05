@@ -21,7 +21,7 @@
 }
 
 .vertical-overlay-menu .navbar.header-navbar.floating-nav {
-  width : calc(100vw - (100vw - 100%) - calc(2.2rem * 2));
+  width : calc(100vw - (100vw - 100%) - calc(0rem * 2));
 }
 
 .vertical-overlay-menu .main-menu, .vertical-overlay-menu.menu-hide .main-menu {

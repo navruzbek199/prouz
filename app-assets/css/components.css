@@ -403,8 +403,13 @@ body.fixed-footer footer.footer-dark {
   color: #fff;
   opacity: 0.5;
 }
+
 .main-menu.menu-light .navigation li a span.menu-sub-title {
   color: #afafaf;
+}
+.main-menu.menu-light .navigation li a span.menu-sub-title:hover {
+  opacity: 1;
+  color: #fff;
 }
 .main-menu.menu-light .navigation li.hover > a {
   padding-left: 25px;

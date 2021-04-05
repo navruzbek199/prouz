@@ -1839,10 +1839,10 @@ html [type="button"],
   color: #626262 !important;
 }
 .header-navbar.floating-nav {
-  margin: 1.3rem 2.2rem 0;
+  margin: 1.3rem 0;
   border-radius: 0.5rem;
   position: fixed;
-  width: calc(100vw - (100vw - 100%) - calc(2.2rem * 2) - 286px);
+  width: calc(100vw - (100vw - 100%) - calc(0rem * 2) - 286px);
   z-index: 12;
   right: 0;
 }
@@ -2361,7 +2361,7 @@ html [type="button"],
 }
 
 body[data-col="1-column"] .header-navbar.floating-nav {
-  width: calc(100vw - (100vw - 100%) - calc(2.2rem * 2));
+  width: calc(100vw - (100vw - 100%) - calc(0rem * 2));
 }
 
 @media (min-width: 1200px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -2523,7 +2523,7 @@ body[data-col="1-column"] .header-navbar.floating-nav {
   .header-navbar.floating-nav {
     width: calc(100vw - (100vw - 100%) - 2.4rem) !important;
     margin-left: 1.2rem;
-    margin-right: 1.2rem;
+    margin-right: 1.2rem!important;
   }
   .content.app-content .content-area-wrapper {
     margin-left: 1.2rem !important;

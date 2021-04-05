@@ -10,7 +10,7 @@
     series: [25],
 
     fill: {
-      colors: ['#033F61']
+      colors: ['#7FE3EE']
     },
 
     plotOptions: {
@@ -51,7 +51,7 @@
     series: [62.5],
 
     fill: {
-      colors: ['#033F61']
+      colors: ['#AE8DFE']
     },
 
     plotOptions: {
@@ -86,7 +86,7 @@
 
   // Avg Session Chart Starts
   // ----------------------------------
-  var $primary = '#033F61';
+  var $primary = 'rgba(174, 141, 254, 1)';
   var $danger = '#EA5455';
   var $warning = '#FF9F43';
   var $info = '#0DCCE1';
@@ -95,7 +95,9 @@
   var $danger_light = '#f29292';
   var $info_light = '#1edec5';
   var $strok_color = '#b9c3cd';
-  var $label_color = '#e7eef7';
+  var $label_color = 'rgba(174, 141, 254, 0.80)';
+  var $label_color2 = 'rgba(174, 141, 254, 0.60)';
+  var $label_color3 = 'rgba(174, 141, 254, 0.40)';
   var $white = '#fff';
 
 
@@ -111,10 +113,11 @@
         filter: 'none'
       }
     },
-    colors: [$label_color, $label_color, $primary, $label_color, $label_color, $label_color],
+    colors: [ $primary, $label_color, $label_color2, $label_color3],
+    opacity: [1, 0.8, 0.6, 0.4],
     series: [{
       name: 'Sessions',
-      data: [75, 125, 225, 175, 125, 75, 25]
+      data: [225, 175, 125, 75,]
     }],
     grid: {
       show: false,
