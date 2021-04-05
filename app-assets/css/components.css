@@ -454,7 +454,7 @@ body.fixed-footer footer.footer-dark {
   margin-bottom: 0;
 }
 .main-menu.menu-light .navigation > li .active .hover > a {
-  background: whitesmoke;
+  background: #fff;
 }
 .main-menu.menu-light .navigation > li ul {
   padding: 0;
@@ -484,7 +484,7 @@ body.fixed-footer footer.footer-dark {
 }
 .main-menu.menu-light .navigation > li ul .hover > a,
 .main-menu.menu-light .navigation > li ul:hover > a {
-  color: #6c6c6c;
+  color: #fff;
 }
 .main-menu.menu-light .navigation > li ul .active {
   background: -webkit-linear-gradient(332deg, #033f61, rgba(3, 63, 97, 0.7));
@@ -497,6 +497,10 @@ body.fixed-footer footer.footer-dark {
 }
 .main-menu.menu-light .navigation > li > ul {
   background: #ffffff;
+}
+
+.has-sub .menu-content i {
+  visibility: hidden;
 }
 .main-menu.menu-light ul.menu-popout {
   background: #ffffff;
@@ -530,14 +534,14 @@ body.fixed-footer footer.footer-dark {
 }
 .main-menu.menu-light ul.menu-popout .hover > a,
 .main-menu.menu-light ul.menu-popout:hover > a {
-  color: #6c6c6c;
+  color: #fff;
   background-color: whitesmoke;
 }
 .main-menu.menu-light ul.menu-popout .active {
   background: rgba(0, 0, 0, 0.06);
 }
 .main-menu.menu-light ul.menu-popout .active > a {
-  color: #7c7c7c;
+  color: #fff;
   background-color: whitesmoke;
 }
 .main-menu.menu-light ul.menu-popout .active .hover > a,
