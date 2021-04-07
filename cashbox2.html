@@ -392,12 +392,40 @@
                     </div>
                 </fieldset> -->
 
-              <form class="d-flex justify-content-between">
-                <div class="form-group date-group cashbox__date">
-                  <input type="date" class="form-control date-input" title="Выберите дату" value="2021-04-12">
+              <form class="d-flex flex-wrap media-flex">
+                <div class="row mb-1 w-100">
+                  <div class="col-md-3 media-sm">
+                    <div class="cashbox__date-block w-100 mb-sm-1">
+                      <input type="date" class="cashbox__date form-control date-input w-100" title="Выберите дату"
+                        value="2021-04-12">
+                    </div>
+                  </div>
+                  <div class="col-md-3 media-sm">
+                    <input class="cashbox__input-number input-number w-100" type="text" value="2 340 000">
+                  </div>
+                  <div class="col-md-6 media-sm">
+                    <textarea class="cashbox__base w-100" name="base" id="base" cols="88"
+                      rows="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium tortor vel</textarea>
+                  </div>
                 </div>
-                <input class="cashbox__input-number input-number" type="number" placeholder="2 340 000" value="2 340 000">
-
+                <div class="row w-100">
+                  <div class="col-md-3 media-sm">
+                    <div class="dropdown">
+                      <button class="cashbox__dropdown w-100 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Выбирать
+                      </button>
+                      <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <a class="cashbox__dropdown-item dropdown-item" href="#">Action</a>
+                        <a class="cashbox__dropdown-item dropdown-item" href="#">Another action</a>
+                        <a class="cashbox__dropdown-item dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-9 media-sm">
+                    <textarea class="cashbox__base w-100" name="coment" id="coment" cols="100" rows="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat quisque urna aliquam lectus aliquam nam ultricies.</textarea>
+                  </div>
+                </div>
               </form>
             </div>
             <div class="table-responsive">

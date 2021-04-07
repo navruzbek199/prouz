@@ -55,7 +55,6 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
   font-size: 14px;
   color: #000;
   font-weight: 400;
-  width: 25%;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -70,6 +69,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 .table td:last-of-type {
   padding-right: 0;
+  text-align: right;
 }
 
 .table .danger-zone td {
@@ -87,7 +87,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 /* NEW */
 .icon__mr {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .pro__form .custom-control {
@@ -258,7 +258,7 @@ html body {
 .btn {
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -402,8 +402,8 @@ input:hover {
 
 input:focus {
   outline: 0;
-  background-color: #1d5371;
-  color: #fff;
+  background-color: inherit;
+  color: #000;
 }
 
 .authorization__name-input {
@@ -842,19 +842,18 @@ input:focus {
 .cashbox__delete {
   width: 130px;
   height: 30px;
-  border: 1px solid #FC5252;
+  border: 1px solid #fc5252;
   border-radius: 5px;
   background-color: #fff;
-  color: #FC5252;
+  color: #fc5252;
   font-size: 14px;
 }
 
 .cashbox__delete:hover {
   color: #fff;
-  background-color: #FC5252;
-  transition: ease-in .2s; 
+  background-color: #fc5252;
+  transition: ease-in 0.2s;
 }
-
 
 .cashbox__today {
   font-size: 1rem;
@@ -876,13 +875,93 @@ input:focus {
 }
 
 .cashbox__date {
-  padding: 0;
+  height: 50px;
+  border-radius: 5px;
 }
 
+.cashbox__input-number {
+  border: 1px solid rgba(105, 96, 150, 0.1);
+  border-radius: 5px;
+  padding: 1rem;
+  height: 50px;
+}
 .cashbox__input-number::placeholder {
   color: #000;
 }
 
+.cashbox__base {
+  border: 1px solid rgba(105, 96, 150, 0.1);
+  border-radius: 5px;
+  padding: 1rem;
+  height: 50px;
+}
+.cashbox__base:active,
+.cashbox__base:focus {
+  outline: 0;
+}
+
+.cashbox__dropdown {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid rgba(105, 96, 150, 0.1) !important;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 1rem !important;
+  height: 50px;
+  font-size: inherit;
+}
+
+.cashbox__dropdown:active,
+.cashbox__dropdown:focus,
+.cashbox__dropdown:hover {
+  color: #000 !important;
+  box-shadow: none !important;
+}
+
+.btn-secondary ~ .dropdown-menu .dropdown-item:not(.active):not(:active):hover,
+.btn-outline-secondary ~ .dropdown-menu .dropdown-item:not(.active):not(:active):hover,
+.btn-flat-secondary ~ .dropdown-menu .dropdown-item:not(.active):not(:active):hover {
+  color: #fff !important;
+}
+
 .btn-new {
-  background: #3774ce!important;
+  background: #3774ce !important;
+}
+
+@media only screen and (max-width: 530px) {
+  .media-sm {
+    margin-bottom: 1rem;
+  }
+  .media-flex {
+    justify-content: center;
+  }
+}
+
+/* ---------------------------income--------------- */
+
+.income__form-control-position {
+  left: 5px;
+  top: 9px;
+}
+
+
+.income__border-top {
+  border-top: 1px solid #f8f8f8;
+}
+
+
+.income__search {
+  padding-left: calc(1.25em + 1.4rem + 1px);
+  color: #8C8C8C;
+  height: 50px;
+}
+
+.income__icon-search {
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 769px) {
+  .income__form-control-position {
+    left: 17px;
+  }
 }
