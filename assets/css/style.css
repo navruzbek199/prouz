@@ -944,15 +944,13 @@ input:focus {
   top: 9px;
 }
 
-
 .income__border-top {
   border-top: 1px solid #f8f8f8;
 }
 
-
 .income__search {
   padding-left: calc(1.25em + 1.4rem + 1px);
-  color: #8C8C8C;
+  color: #8c8c8c !important;
   height: 50px;
 }
 
@@ -963,5 +961,117 @@ input:focus {
 @media only screen and (max-width: 769px) {
   .income__form-control-position {
     left: 17px;
+  }
+}
+
+/* --------------------------expense--------------------- */
+
+.expense__thead {
+  border-top: 1px solid #ebeff4;
+}
+.expense__dropdown::after {
+  display: none;
+}
+
+.expense__tab-content {
+  display: none;
+}
+
+.expense__tab {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.expense__tabs-items {
+  position: relative;
+}
+
+.expense__input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.expense__tab:hover {
+  cursor: pointer;
+}
+
+.tab-1,
+.tab-2,
+.tab-3 {
+  position: relative;
+}
+
+.tab-1::after,
+.tab-2::after,
+.tab-3::after {
+  content: " ";
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3774ce;
+  display: none;
+}
+
+#tab-1:checked ~ .tab-1::after,
+#tab-2:checked ~ .tab-2::after,
+#tab-3:checked ~ .tab-3::after {
+  display: block;
+}
+
+#tab-1:checked ~ .tab-content-1,
+#tab-2:checked ~ .tab-content-2,
+#tab-3:checked ~ .tab-content-3 {
+  display: block;
+}
+
+.bgc-success {
+  border-radius: 30px;
+  background-color: rgba(42, 193, 126, 0.15);
+  width: 50%;
+}
+
+.bgc-warning {
+  border-radius: 30px;
+  background: rgba(254, 196, 0, 0.15);
+  width: 50%;
+}
+
+.bgc-danger {
+  border-radius: 30px;
+  background: rgba(252, 82, 82, 0.15);
+  width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .tab-1::after,
+  .tab-2::after,
+  .tab-3::after {
+    bottom: -5px;
+  }
+
+  .expense__tab {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .tab-1 {
+    padding: 0;
+  }
+  .expense__thead {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expense__date-block {
+    margin: 0 !important;
+    padding-bottom: 1rem;
+  }
+  .expense__total-payment {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
