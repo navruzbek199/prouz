@@ -22,7 +22,6 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="assets/fonts/tt-commons/stylesheet.css">
-
   <link rel="stylesheet" href="app-assets/fonts/font-awesome-5-pro/css/all.min.css">
 
   <!-- BEGIN: Vendor CSS-->
@@ -72,22 +71,22 @@
             <ul class="nav navbar-nav">
               <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
                   href="#"><i class="ficon feather icon-menu"></i></a></li>
-              <li class="d-none main-title d-sm-flex align-items-center" title="СЧФ">СЧФ</li>
+              <li class="d-none main-title d-sm-flex align-items-center" title="СЧФ поставщиков">СЧФ</li>
             </ul>
           </div>
           <ul class="nav navbar-nav float-right">
             <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i
-                                        class="ficon feather icon-maximize" title="Full screen"></i></a></li> -->
+                                      class="ficon feather icon-maximize" title="Full screen"></i></a></li> -->
             <!-- <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i
-                                        class="ficon feather icon-search" title="Search"></i></a>
-                                <div class="search-input">
-                                    <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                    <input class="input" type="text" placeholder="Поиск..." tabindex="-1"
-                                        data-search="template-list">
-                                    <div class="search-input-close"><i class="feather icon-x"></i></div>
-                                    <ul class="search-list search-list-main"></ul>
-                                </div>
-                            </li> -->
+                                      class="ficon feather icon-search" title="Search"></i></a>
+                              <div class="search-input">
+                                  <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
+                                  <input class="input" type="text" placeholder="Поиск..." tabindex="-1"
+                                      data-search="template-list">
+                                  <div class="search-input-close"><i class="feather icon-x"></i></div>
+                                  <ul class="search-list search-list-main"></ul>
+                              </div>
+                          </li> -->
             <li class="nav-item nav-search">
               <a class="nav-link" href="print.html">
                 <img src="assets/img/print.svg" alt="Scan" width="22" height="22" title="Scaner">
@@ -372,91 +371,397 @@
     <div class="content-overlay"></div>
     <div class="header-navbar-shadow"></div>
 
+
+
     <div class="content-wrapper">
-      <div class="content-header row">
-      </div>
+
+
+
 
       <div class="content-body">
         <div class="card">
-          <div class="card-body">
-            <div class="app__block_firefront flex-lg-row flex-column p-0">
-              <fieldset class="form-group position-relative col-lg-3 pl-lg-0">
-                <div class="tabs-wrapper">
-                  <input class="income__input" type="radio" name="tab" id="tab-1">
-                  <input class="income__input" type="radio" name="tab" id="tab-2">
-                  <input class="income__input" type="radio" name="tab" id="tab-3">
-                  <label for="tab-1">Все СЧФ</label>
-                  <label for="tab-2">Оплаченные</label>
-                  <label for="tab-3">Неоплаченные</label>
-                </div>
-              </fieldset>
-            </div>
+          <div class="card-body pb-0">
+            <div class="expense__tabs">
+              <div class="expense__tabs-items">
+                <input class="expense__input" type="radio" name="tabs" id="tab-1" checked>
+                <input class="expense__input" type="radio" name="tabs" id="tab-2">
+                <input class="expense__input" type="radio" name="tabs" id="tab-3">
+                <label class="expense__tab tab-1" for="tab-1">Все СЧФ</label>
+                <label class="expense__tab tab-2" for="tab-2">Оплаченные</label>
+                <label class="expense__tab tab-3" for="tab-3">Неоплаченные</label>
+                <div class="expense__tab-content tab-content-1" id="tab_01">
+                  <!-- <div class="content-header row pr-2"> -->
+                  <!-- <div class="cashbox__date-block pl-1 mb-sm-1">
+                      <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                        value="2021-04-12">
+                    </div>
+                    <div class="cashbox__date-block ml-1 mb-sm-1">
+                      <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                        value="2021-04-12">
+                    </div>
+                    <div class="total__payment my-0 ml-auto flex-column">
+                      <h3 class="cashbox__today">Общая сумма</h3>
+                      <p class="cashboy__quantity">12 000 000 сум</p>
+                    </div>
+                  </div> -->
+                  <div class="table-responsive mt-2">
+                    <table class="table">
+                      <!-- <thead> -->
+                      <div class="expense__thead d-flex py-1">
+                        <!-- <td class='d-flex'> -->
+                        <div class="expense__date-block my-0 mr-1">
+                          <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                            value="2021-04-12">
+                        </div>
+                        <!-- </td> -->
+                        <!-- <td class="text-right"> -->
+                        <div class="expense__date-block my-0">
+                          <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                            value="2021-04-12">
+                        </div>
+                        <!-- </td> -->
+                        <!-- <td> -->
+                        <div class="expense__total-payment my-0 ml-auto pr-3  flex-column">
+                          <h3 class="cashbox__today">Общая сумма</h3>
+                          <p class="cashboy__quantity m-0">12 000 000 сум</p>
+                        </div>
+                        <!-- </td> -->
+                      </div>
+                      <!-- </thead> -->
+                      <tbody>
+                        <tr>
+                          <th class="pl-0 font-weight-bold">Номер счета</th>
+                          <th class="font-weight-bold">Название клиента</th>
+                          <th class="font-weight-bold">Дата</th>
+                          <th class="font-weight-bold">Дата погашения</th>
+                          <th class="font-weight-bold">Статус</th>
+                          <th class="font-weight-bold">Сумма</th>
+                        </tr>
+                        <tr>
+                          <td class="text-success">001</td>
+                          <td class="text-success">OOO GAZPRO</td>
+                          <td class="text-success">20.06.2020</td>
+                          <td class="text-success">2020.06.25</td>
+                          <td>
+                            <p class="text-success bgc-success m-0 text-center">Принят</p>
+                          </td>
+                          <td class="text-success d-flex">2 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0 m-0 expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="m-0 feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-danger">002</td>
+                          <td class="text-danger">OOO GAZPRO</td>
+                          <td class="text-danger">20.06.2020</td>
+                          <td class="text-danger">2020.06.25</td>
+                          <td>
+                            <p class="text-warning bgc-warning m-0 text-center">Ожидание</p>
+                          </td>
+                          <td class="text-danger d-flex">4 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0  expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
 
-            <div class="table-responsive mt-2">
-              <table class="table">
-                <tbody>
-                  <tr class="income__border-top">
-                    <th class="pl-0">
-                      <h4 class="mb-0">Заказы и возвраты</h4>
-                    </th>
-                    <th class="pl-0">
-                    </th>
-                    <th class="pl-0">
-                    </th>
-                  </tr>
-                  <tr>
-                    <td><a class="text-dark" href="#">OOO GAZPRO</a></td>
-                    <td class="text-left">20.06.20</td>
-                    <td class="text-center pr-1">2 000 000</td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-dark" href="#">OOO ЗАК</a></td>
-                    <td class="text-left">20.06.20</td>
-                    <td class="text-center pr-1">2 000 000</td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-dark" href="#">OOO ЗАК</a></td>
-                    <td class="text-left">20.06.20</td>
-                    <td class="text-center pr-1">2 000 000</td>
-                  </tr>
-                </tbody>
-              </table>
+                        </tr>
+                        <tr>
+                          <td class="text-success">003</td>
+                          <td class="text-success">OOO GAZPRO</td>
+                          <td class="text-success">20.06.2020</td>
+                          <td class="text-success">2020.06.25</td>
+                          <td>
+                            <p class="text-success bgc-success m-0 text-center">Принят</p>
+                          </td>
+                          <td class="text-success d-flex">6 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0  expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-success">004</td>
+                          <td class="text-success">OOO GAZPRO</td>
+                          <td class="text-success">20.06.2020</td>
+                          <td class="text-success">2020.06.25</td>
+                          <td>
+                            <p class="text-warning bgc-warning m-0 text-center">Ожидание</p>
+                          </td>
+                          <td class="text-success d-flex">8 000 000
+                            <div class="dropdown expense__dropdown ml-2">
+                              <button class="border-0 bg-transparent expense__dropdown dropdown-toggle  p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-danger">005</td>
+                          <td class="text-danger">OOO GAZPRO</td>
+                          <td class="text-danger">20.06.2020</td>
+                          <td class="text-danger">2020.06.25</td>
+                          <td>
+                            <p class="text-danger bgc-danger m-0 text-center">Не принят</p>
+                          </td>
+                          <td class="text-danger d-flex">2 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0 expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- </div> -->
+                </div>
+                <div class="expense__tab-content tab-content-2" id="tab_02">
+                  <!-- <div class="cashbox__date-block pl-1 mb-sm-1">
+                      <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                        value="2021-04-12">
+                    </div>
+                    <div class="cashbox__date-block ml-1 mb-sm-1">
+                      <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                        value="2021-04-12">
+                    </div>
+                    <div class="total__payment my-0 ml-auto flex-column">
+                      <h3 class="cashbox__today">Общая сумма</h3>
+                      <p class="cashboy__quantity">12 000 000 сум</p>
+                    </div>
+                  </div> -->
+                  <div class="table-responsive mt-2 pl-2">
+                    <table class="table">
+                      <tbody>
+                        <!-- <tr>
+                            <td>
+                              <div class="cashbox__date-block mb-sm-1 mb-0">
+                                <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                                  value="2021-04-12">
+                              </div>
+                            </td>
+                            <td class="text-right">
+                              <div class="cashbox__date-block ml-1  mb-sm-1 mb-0">
+                                <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                                  value="2021-04-12">
+                              </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              <div class="total__payment my-0 ml-auto flex-column">
+                                <h3 class="cashbox__today">Общая сумма</h3>
+                                <p class="cashboy__quantity">12 000 000 сум</p>
+                              </div>
+                            </td>
+                          </tr> -->
+                        <tr>
+                          <th class="pl-0 font-weight-bold">Номер счета</th>
+                          <th class="font-weight-bold">Название клиента</th>
+                          <th class="font-weight-bold">Дата</th>
+                          <th class="font-weight-bold">Дата погашения</th>
+                          <th class="font-weight-bold">Статус</th>
+                          <th class="font-weight-bold">Сумма</th>
+                        </tr>
+                        <tr>
+                          <td class="text-success">001</td>
+                          <td class="text-success">OOO GAZPRO</td>
+                          <td class="text-success">20.06.2020</td>
+                          <td class="text-success">2020.06.25</td>
+                          <td class="text-success">Принят</td>
+                          <td class="text-success d-flex">2 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0  expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-danger">002</td>
+                          <td class="text-danger">OOO GAZPRO</td>
+                          <td class="text-danger">20.06.2020</td>
+                          <td class="text-danger">2020.06.25</td>
+                          <td class="text-warning">Ожидание</td>
+                          <td class="text-danger d-flex">4 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0  expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-success">003</td>
+                          <td class="text-success">OOO GAZPRO</td>
+                          <td class="text-success">20.06.2020</td>
+                          <td class="text-success">2020.06.25</td>
+                          <td class="text-success">Принят</td>
+                          <td class="text-success d-flex">6 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0  expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-success">004</td>
+                          <td class="text-success">OOO GAZPRO</td>
+                          <td class="text-success">20.06.2020</td>
+                          <td class="text-success">2020.06.25</td>
+                          <td class="text-warning">Ожидание</td>
+                          <td class="text-success d-flex">8 000 000
+                            <div class="dropdown expense__dropdown ml-2">
+                              <button class="border-0 bg-transparent expense__dropdown dropdown-toggle  p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-danger">005</td>
+                          <td class="text-danger">OOO GAZPRO</td>
+                          <td class="text-danger">20.06.2020</td>
+                          <td class="text-danger">2020.06.25</td>
+                          <td class="text-danger">Не принят</td>
+                          <td class="text-danger d-flex">2 000 000
+                            <div class="dropdown ml-2">
+                              <button class="border-0 expense__dropdown bg-transparent dropdown-toggle p-0"
+                                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="feather icon-more-vertical">
+                                </i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                  href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item"
+                                  href="#">Calendar</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="expense__tab-content tab-content-3" id="tab_03">
+                  <div class="table-responsive mt-2">
+                    <table class="table">
+                      <div class="expense__thead d-flex py-1">
+                        <div class="expense__date-block my-0 mr-1">
+                          <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                            value="2021-04-12">
+                        </div>
+                        <div class="expense__date-block my-0">
+                          <input type="date" class="cashbox__date form-control date-input" title="Выберите дату"
+                            value="2021-04-12">
+                        </div>
+                        <div class="expense__total-payment my-0 ml-auto pr-3  flex-column">
+                          <h3 class="cashbox__today">Общая сумма</h3>
+                          <p class="cashboy__quantity m-0">12 000 000 сум</p>
+                        </div>
+                      </div>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END: Content-->
+    <!-- END: Content-->
 
-  <div class="sidenav-overlay"></div>
-  <div class="drag-target"></div>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
 
-  <!-- BEGIN: Vendor JS-->
-  <script src="app-assets/vendors/js/vendors.min.js"></script>
-  <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
 
-  <!-- BEGIN: Page Vendor JS-->
-  <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
   <script src="app-assets/vendors/js/extensions/tether.min.js"></script>
   <script src="app-assets/vendors/js/extensions/shepherd.min.js"></script> -->
-  <!-- END: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
 
-  <!-- BEGIN: Page Vendor JS-->
-  <!-- <script src="app-assets/vendors/js/extensions/dropzone.min.js"></script>
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- <script src="app-assets/vendors/js/extensions/dropzone.min.js"></script>
   <script src="app-assets/vendors/js/ui/prism.min.js"></script> -->
-  <!-- END: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
 
-  <!-- BEGIN: Theme JS-->
-  <script src="app-assets/js/core/app-menu.js"></script>
-  <script src="app-assets/js/core/app.js"></script>
-  <script src="app-assets/js/scripts/components.js"></script>
-  <!-- END: Theme JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <script src="app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
 
-  <!-- BEGIN: Page JS-->
-  <!-- <script src="app-assets/js/scripts/extensions/dropzone.js"></script> -->
-  <!-- END: Page JS-->
-  <script src="assets/js/scripts.js"></script>
+    <!-- BEGIN: Page JS-->
+    <!-- <script src="app-assets/js/scripts/extensions/dropzone.js"></script> -->
+    <!-- END: Page JS-->
+    <script src="assets/js/scripts.js"></script>
 </body>
 <!-- END: Body-->
 

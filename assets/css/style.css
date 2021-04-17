@@ -977,6 +977,43 @@ input:focus {
   font-size: 17px;
 }
 
+.income__modal-inner p {
+  margin: 0!important;
+  padding-bottom: 1rem;
+}
+
+.income__modal-item {
+  display: flex;
+}
+
+.income__modal-item-left {
+  width: 160px;
+}
+
+.income__modal-item-right {
+  width: 230px;
+}
+.income__modal-item-right-number {
+  width: 100px;
+}
+
+.income__modal-dialog {
+  max-width: 650px!important;
+  margin: 20rem auto!important;
+}
+
+.income__modal-footer {
+  border: none;
+}
+
+.income__modal-input::placeholder {
+  color: rgba(142, 146, 161, 0,5);
+}
+
+.income__button-cancel {
+
+}
+
 @media only screen and (max-width: 769px) {
   .income__form-control-position {
     left: 17px;
@@ -1169,7 +1206,7 @@ input:focus {
     margin-bottom: 1rem;
   }
   .expense__button-left .new-btn:last-child {
-    margin-left: 0!important;
+    margin-left: 0 !important;
   }
   .expense__form {
     justify-content: center;
