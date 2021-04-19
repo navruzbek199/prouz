@@ -978,7 +978,7 @@ input:focus {
 }
 
 .income__modal-inner p {
-  margin: 0!important;
+  margin: 0 !important;
   padding-bottom: 1rem;
 }
 
@@ -998,25 +998,130 @@ input:focus {
 }
 
 .income__modal-dialog {
-  max-width: 650px!important;
-  margin: 20rem auto!important;
+  max-width: 650px !important;
+  margin: 20rem auto !important;
 }
 
 .income__modal-footer {
   border: none;
 }
 
+.income__modal-input {
+  border: 1px solid rgba(142, 146, 161, 0.25) !important;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
 .income__modal-input::placeholder {
-  color: rgba(142, 146, 161, 0,5);
+  color: rgba(142, 146, 161, 0.5);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .income__button-cancel {
+  border: none !important;
+  background-color: #fff !important;
+  box-shadow: none !important;
+  color: rgba(55, 116, 206, 1) !important;
+  font-weight: 700;
+  font-size: 16px;
+}
 
+
+
+.income__print-button {
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+}
+
+.income__print-text {
+  text-decoration: underline;
+  padding-left: 0.3rem;
+}
+
+.income__button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+
+  text-decoration: none;
+  display: inline-block;
+}
+.income__button:active {
+  color: gray;
+}
+.income__button > .arrows {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+  padding-right: 30px;
+}
+.income__button > input {
+  display: none;
+}
+#stateInput + .arrows:after,
+#stateInput + .arrows:before {
+  content: " ";
+  position: absolute;
+  right: 10px;
+  border: 10px solid transparent;
+}
+#stateInput + .arrows:after {
+  bottom: 0px;
+  border-top: 10px solid rgba(42, 42, 42, 1);
+  border-width: 9px 8px;
+}
+#stateInput + .arrows:before {
+  top: 0px;
+  border-bottom: 10px solid gray;
+  border-width: 9px 8px;
+}
+#stateInput:checked + .arrows:before {
+  border-bottom-color: rgba(42, 42, 42, 1);
+}
+#stateInput:checked + .arrows:after {
+  border-top-color: gray;
+}
+
+.income7__info {
+  padding: 0 14px;
+}
+
+.income7__input {
+  font-size: 16px;
+}
+
+.income7__hr {
+  margin-bottom: 2rem;
+}
+
+.income7__card-top {
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
+.income7__card-bottom {
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+}
+
+.income7__form-label-group > input:not(:placeholder-shown) ~ label,
+.income7__form-label-group textarea:not(:placeholder-shown) ~ label {
+  top: 0 !important;
+  padding: 0.5rem 0rem 1rem 0.4rem;
 }
 
 @media only screen and (max-width: 769px) {
   .income__form-control-position {
     left: 17px;
+  }
+  .income7__info {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .income__sm-column {
+    flex-direction: column;
   }
 }
 

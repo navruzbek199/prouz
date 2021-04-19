@@ -158,3 +158,9 @@
   WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR JAVASCRIPT CODE PLEASE CONSIDER WRITING YOUR SCRIPT HERE.  */
 })(window);
 
+
+
+$('#stateInput').change(function () {
+  console.log('This value is now: ' + $(this).prop('checked'));
+})
+

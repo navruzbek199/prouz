@@ -382,7 +382,7 @@
           <div class="card-body">
             <div class="table-responsive">
               <table class="table">
-                <div class="expense__info d-flex">
+                <div class="expense__info d-flex w-100">
                   <div class="invoice__number">
                     <h3 class="cashbox__today">Номер СЧФ</h3>
                     <p class="expense__p">001</p>
@@ -402,6 +402,10 @@
                   <div class="invoice__number">
                     <h3 class="cashbox__today">Дата погашения</h3>
                     <p class="expense__p">25.06.2020</p>
+                  </div>
+                  <div class="invoice__number">
+                    <h3 class="cashbox__today">Статус</h3>
+                    <p class="expense__p text-success">Принят</p>
                   </div>
                 </div>
                 <div class="thead">
@@ -484,19 +488,124 @@
 
             <div class="expense__buttons d-flex justify-content-between mt-3">
               <div class="expense__button-left">
-                <button class="btn pro__btn new-btn waves-effect waves-light">
-                <img src="assets/img/edit.png" alt="edit"> Корректировать</button>
-                <button class="btn pro__btn new-btn waves-effect waves-light ml-1"> <img src="assets/img/download.png" alt="download"> Скачать СЧФ</button>
+                <!-- <button class="btn pro__btn new-btn waves-effect waves-light">
+                  <img src="assets/img/edit.png" alt="edit">Корректировать</button> -->
+                <button class="btn pro__btn new-btn waves-effect waves-light ml-1"> <img src="assets/img/download.png"
+                    alt="download">Скачать СЧФ</button>
               </div>
               <form action="" class="d-flex expense__form">
-                <button class="btn btn-primary btn-new pro__btn waves-effect waves-light">Оплатить</button>
+                <button type="button" class="btn btn-primary btn-new pro__btn waves-effect waves-light"
+                  data-toggle="modal" data-target="#exampleModal">Оплатить</button>
               </form>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog income__modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header bg-white d-flex justify-content-center">
+                      <h5 class="modal-title font-weight-bold text-center text-dark" id="exampleModalLabel">Оплата СЧФ
+                        #001</h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="income__modal-inner">
+                        <div class="income__modal-item income__sm-column">
+                          <div class="income__modal-item-left">
+                            <p class="income__modal-name font-weight-bold">Данные по оплате:
+                            </p>
+                          </div>
+                          <div class="income__modal-item-right">
+                            <div class="income__modal-item-right-items d-flex justify-content-between">
+                              <p class="income__modal-item-right-name">Номер заказа</p>
+                              <p class="income__modal-item-right-number">#001</p>
+                            </div>
+                            <div class="income__modal-item-right-items d-flex justify-content-between">
+                              <p class="income__modal-item-right-name">Дата отправки: </p>
+                              <p class="income__modal-item-right-number">20.06.2020</p>
+                            </div>
+                            <div class="income__modal-item-right-items d-flex justify-content-between">
+                              <p class="income__modal-item-right-name">Дата погашения:
+                              </p>
+                              <p class="income__modal-item-right-number">25.06.2020</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="income__modal-item">
+                          <div class="income__modal-item-left">
+                            <p class="income__modal-name font-weight-bold">Сумма:</p>
+                          </div>
+                          <div class="income__modal-item-right">
+                            <p class="text-success">6 000 000</p>
+                          </div>
+                        </div>
+
+                        <div class="income__modal-item">
+                          <div class="income__modal-item-left">
+                            <p class="income__modal-name font-weight-bold">НДС</p>
+                          </div>
+                          <div class="income__modal-item-right">
+                            <p class="text-success">60 000</p>
+                          </div>
+                        </div>
+
+                        <div class="income__modal-item">
+                          <div class="income__modal-item-left">
+                            <p class="income__modal-name font-weight-bold">Итого сумма:</p>
+                          </div>
+                          <div class="income__modal-item-right">
+                            <p class="text-success">6 060 000</p>
+                          </div>
+                        </div>
+
+                        <div class="income__modal-item">
+                          <div class="income__modal-item-left">
+                            <p class="income__modal-name font-weight-bold">Оплатить:</p>
+                          </div>
+                          <div class="income__modal-item-right">
+                            <input class="income__modal-input" type="text" name="pay" id="pay"
+                              placeholder="Введите цену, которую хотите заплатить">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer income__modal-footer">
+                      <button type="button" class="btn income__button-cancel" data-dismiss="modal">Отмена</button>
+                      <button type="button"
+                        class="btn btn-primary btn-new waves-effect waves-light income__button-submit">Оплатить</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Modal -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Modal -->
+
+
   <!-- END: Content-->
 
   <div class="sidenav-overlay"></div>
