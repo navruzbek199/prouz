@@ -66,6 +66,9 @@
                         <li class="nav-item mobile-menu d-xl-none mr-auto"><a
                                 class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                                     class="ficon feather icon-menu"></i></a></li>
+                                    <li>
+                                        <h2 class="content-header-title mb-0 mt-xl-1 mt-2 ml-2">Продажи</h2>
+                                    </li>
                     </ul>
                 </div>
                 <ul class="nav navbar-nav float-right">
@@ -373,7 +376,7 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12 d-flex align-items-center">
-                            <h2 class="content-header-title mb-0">Продажи</h2>
+                            
                         </div>
                     </div>
                 </div>
@@ -382,50 +385,30 @@
             <div class="content-body">
                 <div class="card">
                     <div class="card-body">
-                        <div class="app__block_firefront">
-                            <fieldset class="form-group position-relative">
-                                <input type="text" class="form-control" id="iconLeft2" placeholder="Поиск товара">
-                                <div class="form-control-position">
-                                    <i class="feather icon-search"></i>
-                                </div>
-                            </fieldset>
-    
-                            <button class="btn btn-primary pro__btn waves-effect waves-light">Добавить клиента <i class="feather icon-users"></i></button>
-                        </div>
-                        <hr>
-                        <h4 class="my-3">Заказы и возвраты</h4>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>OOO GAZPRO</td>
-                                        <td>20.06.20</td>
-                                        <td>2 000 000</td>
-                                        <td class="d-flex justify-content-end"><a href="selling2.html" class="btn btn btn-outline-primary waves-effect waves-light pro__btn">Просмотр<i class="fa fa-eye font-weight-bold"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>OOO ЗАК</td>
-                                        <td>20.06.20</td>
-                                        <td>2 000 000</td>
-                                        <td class="d-flex justify-content-end"><a href="selling2.html" class="btn btn btn-outline-primary waves-effect waves-light pro__btn">Просмотр<i class="fa fa-eye font-weight-bold"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>OOO ЗАК</td>
-                                        <td>20.06.20</td>
-                                        <td>2 000 000</td>
-                                        <td class="d-flex justify-content-end"><a href="selling2.html" class="btn btn btn-outline-primary waves-effect waves-light pro__btn">Просмотр<i class="fa fa-eye font-weight-bold"></i></a></td>
-                                    </tr>
-                                    <tr class="danger-zone">
-                                        <td>ЯТТ Дармонов А. П.</td>
-                                        <td>20.06.20</td>
-                                        <td>-5 000 000</td>
-                                        <td class="d-flex justify-content-end"><a href="selling2.html" class="btn btn btn-outline-primary waves-effect waves-light pro__btn">Просмотр<i class="fa fa-eye font-weight-bold"></i></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="app__block_firefront flex-md-row flex-column">
+                          <fieldset data-bs-toggle="modal" data-bs-target="#exampleModal" class="form-group position-relative">
+                            <div class="form-control-position">
+                              <i class="feather icon-search"></i>
+                            </div>
+                            <input type="text" class="form-control" style="height: 48px;" id="iconLeft2" placeholder="Поиск товара">
+                          </fieldset>
+                          <hr>
+                        <div> 
+                        <div class="mb-md-1 justify-content-md-between d-lg-flex">
+                            <button class="btn btn-outline-primary pro__btn waves-effect waves-light">
+                                <img src="./assets/img/skayner.svg" alt="scn">
+                                сканировать</button>
+                            <button class="btn btn-outline-primary pro__btn waves-effect waves-light">
+                                <img src="./assets/img/pro-refresh.svg" alt="pro-refresh">
+                                Все сделки </button>
+                            <button class="btn btn-outline-primary pro__btn waves-effect waves-light"><i class="fas fa-sync-alt mr-1"></i>Оформить возврат</button>
                         </div>
                     </div>
                 </div>
+                <hr>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
     </div>

@@ -66,6 +66,9 @@
                             <li class="nav-item mobile-menu d-xl-none mr-auto"><a
                                     class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                                         class="ficon feather icon-menu"></i></a></li>
+                                        <li>
+                                            <h2 class="content-header-title mb-0 ml-2 mt-xl-1 mt-2">Задачи</h2>
+                                        </li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
@@ -375,99 +378,72 @@
               <div class="content-header-left col-md-9 col-12 mb-2">
                   <div class="row breadcrumbs-top">
                       <div class="col-12 d-flex align-items-center">
-                          <h2 class="content-header-title mb-0">Продажи</h2>
-                          <div class="breadcrumb-wrapper">
+                          
+                          <!-- <div class="breadcrumb-wrapper">
                               <ol class="breadcrumb align-items-center">
                                   <li class="breadcrumb-item"><a href="index.html">Home</a>
                                   </li>
-                                  
-                                  <li class="breadcrumb-item active">ООО GAZPRO
                                   </li>
                               </ol>
-                          </div>
+                          </div> -->
                       </div>
                   </div>
-                  <a href="#" class="back-to"><i class="feather icon-chevron-left"></i> Назад</a>
               </div>
           </div>
             <div class="content-body">
-              <div class="card">
-                <div class="card-body">
+                <div class="card">
+                  <div class="card-body">
                     <div class="app__block_firefront flex-md-row flex-column">
                         <fieldset class="form-group position-relative">
-                            <input type="text" class="form-control" id="iconLeft2" placeholder="Поиск товара">
-                            <div class="form-control-position">
-                                <i class="feather icon-search"></i>
-                            </div>
-                        </fieldset>
-                        <div>
-                            <button class="btn btn btn-outline-primary waves-effect waves-light mr-lg-2 my-lg-0 my-1">Отсканировать товар <img width="20" height="20" src="assets/img/scan-2.svg" class="ml-1" alt=""></button>
-                            <button class="btn btn-primary pro__btn waves-effect waves-light">Добавить клиента <i class="feather icon-users"></i></button>
-                        </div>
+                                <div class="form-control-position">
+                                  <i class="feather icon-search"></i>
+                                </div>
+                                <input type="text" class="form-control" id="iconLeft2" style="height: 48px" placeholder="Поиск поставщика">
+                              </fieldset>
                     </div>
-                    <hr>
-                    <h4 class="my-3">Список</h4>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>1. Стилус</td>
-                                    <td><img src="assets/img/box-count.svg" class="icon__mr" alt=""> 10 шт.</td>
-                                    <td>1 шт.</td>
-                                    <td>2 000 000</td>
-                                    <td class="d-flex justify-content-end"><button class="btn btn-danger pro__btn waves-effect waves-light">Удалить<i class="feather icon-trash-2"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td>2. R2D2</td>
-                                    <td><img src="assets/img/box-count.svg" class="icon__mr" alt=""> 10 шт.</td>
-                                    <td>1 шт.</td>
-                                    <td>2 000 000</td>
-                                    <td class="d-flex justify-content-end"><button class="btn btn-danger pro__btn waves-effect waves-light">Удалить<i class="feather icon-trash-2"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td>3. Генератор варп двигателя</td>
-                                    <td><img src="assets/img/box-count.svg" class="icon__mr" alt=""> 10 шт.</td>
-                                    <td>1 шт.</td>
-                                    <td>2 000 000</td>
-                                    <td class="d-flex justify-content-end"><button class="btn btn-danger pro__btn waves-effect waves-light">Удалить<i class="feather icon-trash-2"></i></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <hr>
-                    </div>
-                    <form class="pro__form mt-2">
-                        <h3 class="mb-1">Выберите тип оплаты</h3>
-                        <fieldset>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="customRadio" id="customRadio1" checked>
-                                <label class="custom-control-label" for="customRadio1">Наличные</label>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2">
-                                <label class="custom-control-label" for="customRadio2">Электронный кошелек</label>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="customRadio" id="customRadio3">
-                                <label class="custom-control-label" for="customRadio3">Терминал/СЧФ</label>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="customRadio" id="customRadio4">
-                                <label class="custom-control-label" for="customRadio4">Долг</label>
-                            </div>
-                        </fieldset>
-                        <div class="pro__block d-flex justify-content-end">
-                            <button class="btn btn-primary pro__btn waves-effect waves-light" type="submit">Далее</button>
-                        </div>
-                    </form>
-                </div>
-              </div>
+            <hr>
+            <h4 class="mb-2">Список заказов и возвратов</h4>
+            <div class="table-responsive">
+              <table class="table">
+                  <tbody>
+                      <tr>
+                          <td>mar12341</td>
+                          <td>OOO GAZPRO</td>
+                          <td>20.06.20</td>
+                          <td class="text-center">2 000 000</td>
+                          <td class=" text-center"><span style="color: #fff; background-color: #2AC17E">В процессе</span></td>
+                          <td class="d-flex justify-content-end"><a href="#" class="btn btn btn-outline-primary waves-effect waves-light border-primary">Просмотр</a></td>
+                      </tr>
+                      <tr>
+                         <td>mar12341</td>
+                          <td>OOO ЗАК</td>
+                          <td>20.06.20</td>
+                          <td class="text-center">2 000 000</td>
+                          <td class=" text-center"><span style="color: #fff;">Выполнен</span></td>
+                          <td class="d-flex justify-content-end"><a href="#" class="btn btn btn-outline-primary waves-effect waves-light  border-primary">Просмотр</a></td>
+                      </tr>
+                      <tr>
+                         <td>mar12341</td>
+                          <td>OOO ЗАК</td>
+                          <td>20.06.20</td>
+                          <td class="text-center">2 000 000</td>
+                          <td class=" text-center"><span style="color: #fff">Выполнен</span></td>
+                          <td class="d-flex justify-content-end"><a href="#" class="btn btn btn-outline-primary border-primary waves-effect waves-light">Просмотр</a></td>
+                      </tr>
+                      <tr>
+                         <td>mar12341</td>
+                          <td>ЯТТ Дармонов А. П.</td>
+                          <td>20.06.20</td>
+                          <td class="text-center" style="color: red">-5 000 000</td>
+                          <td class=" text-center"><span style="color: #fff; background-color: #FC5252 ">Возврат</span></td>
+                          <td class="d-flex justify-content-end"><a href="#" class="btn btn btn-outline-primary waves-effect waves-light border-primary">Просмотр</a></td>
+                      </tr>
+                  </tbody>
+              </table>
             </div>
+          </div>
+            </div>
+      </div>
         </div>
     </div>
     <!-- END: Content-->

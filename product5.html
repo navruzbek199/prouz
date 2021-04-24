@@ -71,6 +71,9 @@
           <ul class="nav navbar-nav">
             <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
                 href="#"><i class="ficon feather icon-menu"></i></a></li>
+                <li>
+                  <h2 class="ml-2 mt-xl-1 mt-2 text-black font-weight-normal">Инвентаризация</h2>
+                </li>
           </ul>
         </div>
         <ul class="nav navbar-nav float-right">
@@ -371,22 +374,96 @@
     <div class="content-wrapper">
       <div class="content-header row">
       </div>
-
-      <h2 class="mb-2 mt-1 text-primary font-weight-bold">Инвентаризация</h2>
-
       <div class="content-body">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                          <div class="col-md-3">
+                          <div class="information mb-1">
+                              <span>ID инвентаризации </span>
+                              <p>dir12345</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="information mb-1">
+                              <span>Дата и время  </span>
+                              <p>25.06.2020  10:30</p>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          <div class="d-flex  justify-content-md-end justify-content-center w-100 mt-1 mb-1">
+                          <a href="#" class="btn btn-outline-primary pro__btn mt-1 mt-md-0">Начать</a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+               <div class="card w-100">
+                <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <td class="border-0 text-dark py-2 font-weight-bold">Наименование</td>
+                            <td class="border-0 text-dark py-2 font-weight-bold">Ед. изм</td>
+                            <td class="border-0 text-dark py-2 font-weight-bold">Кол-во</td>
+                            <td class="border-0 text-dark py-2 font-weight-bold">Нов. кол-во</td>
+                            <td class="border-0 text-dark py-2 font-weight-bold">Разниция</td>
+                            <td class="border-0 text-dark py-2 font-weight-bold">Сумма</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Стилус</td>
+                            <td class="">шт</td>
+                            <td>10</td>
+                            <td class="">10</td>
+                            <td>0</td>
+                            <td class="">0</td>
+                          </tr>
+                          <tr>
+                            <td>Телевизор</td>
+                            <td class="">шт</td>
+                            <td>100</td>
+                            <td class="">10</td>
+                            <td>-90</td>
+                            <td class="">-9 000k</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+          </div>
+            </div>
+        </div>
         <div class="row">
           <div class="col-xl-8 h-100">
             <div class="card">
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
-                    <thead class="border-bottom">
-                      <tr>
-                        <td class="border-0 text-dark py-2">Общий итог</td>
-                        <td class="border-0 text-dark py-2"></td>
-                      </tr>
-                    </thead>
                     <tbody>
                       <tr>
                         <td>Всего позиций</td>
@@ -415,11 +492,14 @@
                     </tbody>
                   </table>
                 </div>
+                <fieldset class="form-label-group mt-2">
+                    <textarea class="form-control" id="label-textarea" rows="6" placeholder="Комментарий........"></textarea>
+                    <label for="label-textarea">Комментарий</label>
+                </fieldset>
               </div>
             </div>
           </div>
           <div class="col-xl-4 h-100">
-
             <div class="row">
               <div class="col-lg-6 col-xl-12">
                 <div class="card">
@@ -428,8 +508,8 @@
                       <table class="table">
                         <thead class="border-bottom">
                           <tr>
-                            <td class="border-0 text-dark py-2">Недостача</td>
-                            <td class="border-0 text-dark py-2"></td>
+                            <td class="border-0 text-dark font-weight-bold py-2">Недостача</td>
+                            <td class="border-0 text-dark font-weight-bold py-2"></td>
                           </tr>
                         </thead>
                         <tbody>
@@ -454,8 +534,8 @@
                       <table class="table">
                         <thead class="border-bottom">
                           <tr>
-                            <td class="border-0 text-dark py-2">Излишки</td>
-                            <td class="border-0 text-dark py-2"></td>
+                            <td class="border-0 font-weight-bold py-2">Излишки</td>
+                            <td class="border-0 font-weight-bold py-2"></td>
                           </tr>
                         </thead>
                         <tbody>
@@ -474,27 +554,11 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-        <div class="card py-2">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-xl-8">
-                
-                <fieldset class="form-label-group">
-                    <textarea class="form-control" id="label-textarea" rows="6" placeholder="Комментарий........"></textarea>
-                    <label for="label-textarea">Комментарий</label>
-                </fieldset>
-              </div>
+            <div class="d-flex justify-content-md-end justify-content-center mt-1 mb-2 flex-md-row flex-column">
+              <button class="btn btn-outline-primary pro__btn waves-effect waves-light">Распечатать</button>
             </div>
-            <div class="d-flex justify-content-md-end justify-content-center mt-3 flex-md-row flex-column">
-              <button class="btn btn-outline-primary pro__btn waves-effect waves-light mr-md-1 mb-md-0 mb-2">Распечатать</button>
-              <button class="btn btn-primary pro__btn waves-effect waves-light">Готово</button>
-            </div>
-          </div>
-        </div>
-  
     </div>
   </div>
   <!-- END: Content-->

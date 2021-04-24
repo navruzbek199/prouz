@@ -387,9 +387,6 @@
                           </div>
                         </div>
                         <div class="col-lg-6 mt-1">
-                            <button type="button" class="btn btn btn-outline-primary waves-effect waves-light w-100">Отсканировать товар <img width="20" height="20" src="assets/img/scan-2.svg" class="ml-1" alt=""></button>
-                        </div>
-                        <div class="col-lg-6 mt-1">
                           <div class="form-label-group">
                             <input type="text" id="form-number-selling" class="form-control" placeholder="Название товара"
                               required>
@@ -460,35 +457,25 @@
                         </div>
                         <div class="col-lg-6 mt-1">
                           <div class="form-label-group">
-                            <input type="text" id="form-inn" class="form-control" placeholder="Страна" required>
+                            <input type="text" id="form-inn" class="form-control"  placeholder="Страна" required>
                             <label for="form-inn">Страна</label>
                           </div>
                         </div>
                         <div class="col-lg-6 mt-1">
                           <ul class="list-unstyled mb-0">
                             <li class="mt-1">
-                                <fieldset>
-                                    <div class="vs-checkbox-con vs-checkbox-primary">
-                                        <input type="checkbox" checked value="false">
-                                        <span class="vs-checkbox">
-                                            <span class="vs-checkbox--check">
-                                                <i class="vs-icon feather icon-check"></i>
-                                            </span>
-                                        </span>
-                                        <span class="">НДС</span>
-                                    </div>
-                                </fieldset>
                             </li>
                             <li class="mt-1">
                                 <fieldset>
-                                    <div class="vs-checkbox-con vs-checkbox-primary">
+                                    <div class="vs-checkbox-con vs-checkbox-outline-primary justify-content-between">
+                                        <span class="">Активность</span>
                                         <input type="checkbox" value="false">
                                         <span class="vs-checkbox">
                                             <span class="vs-checkbox--check">
                                                 <i class="vs-icon feather icon-check"></i>
                                             </span>
                                         </span>
-                                        <span class="">Активность</span>
+                                        
                                     </div>
                                 </fieldset>
                             </li>
@@ -504,25 +491,19 @@
                     Info: We have changed path of error and success mark from vendor's css.
                   -->
                   <div>
-                    <div class="dropzone dropzone-area" id="dpz-single-file">
-                      <div class="dz-message">Фото товара</div>
-                    </div>
                     <div class="d-flex justify-content-center mt-2">
-                      <button type="button" id="select-files" class="btn btn btn-outline-primary waves-effect waves-light pro__btn mb-1"><i class="icon-file2"></i> Загрузить</button>
+                      <button type="button" id="select-files" class="btn btn btn-outline-primary waves-effect waves-light pro__btn mb-1 w-100"><img class="mr-1" src="./assets/img/skayner.svg" alt="scan"> Отсканировать товар</button>
                     </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="dropzone dropzone-area" id="dpz-single-file2">
-                      <div class="dz-message">Фото товара</div>
-                    </div>
-                    <div class="d-flex justify-content-center mt-2">
-                      <button type="button" id="select-files2" class="btn btn btn-outline-primary waves-effect waves-light pro__btn mb-1"><i class="icon-file2"></i> Загрузить</button>
-                    </div>
+                       <div class="form-label-group mt-1">
+                            <input type="text" id="form-inn" class="form-control" placeholder="ID" required>
+                            <label for="form-inn">Акции</label>
+                            <a class="a-btn" href="#"><i class="fas fa-plus"></i></a>
+                        </div>
                   </div>
                 </div>
               </div>
               <div class="d-flex justify-content-md-end justify-content-center">
-                <button type="submit" class="btn btn-primary pro__btn waves-effect waves-light">Сохранить</button>
+                <button type="submit" class="btn btn-outline-primary pro__btn waves-effect waves-light">Сохранить</button>
               </div>
             </form>
           </div>

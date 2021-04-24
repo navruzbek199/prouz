@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="USoft">
-    <title>Pro-Dashboard | Сверка возврат</title>
+    <title>Pro-Dashboard | Сверка</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -51,7 +51,6 @@
 
 </head>
 <!-- END: Head-->
-
 <!-- BEGIN: Body-->
 
 <body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static  " data-open="click"
@@ -66,6 +65,9 @@
             <ul class="nav navbar-nav">
               <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
                   href="#"><i class="ficon feather icon-menu"></i></a></li>
+                  <li>
+                     <h2 class="content-header-title font-weight-normal mb-0 ml-2 mt-xl-1 mt-2">Сделки</h2>
+                  </li>
             </ul>
           </div>
           <ul class="nav navbar-nav float-right">
@@ -362,115 +364,263 @@
   <div class="app-content content">
     <div class="content-overlay"></div>
     <div class="header-navbar-shadow"></div>
-
     <div class="content-wrapper">
       <div class="content-header row">
       </div>
-
       <div class="content-header row">
         <div class="content-header-left col-md-9 col-12 mb-2">
           <div class="row breadcrumbs-top">
             <div class="col-12 d-flex align-items-center">
-              <h2 class="content-header-title mb-0">ООО GAZPRO</h2>
-              <div class="breadcrumb-wrapper">
+             
+              <!-- <div class="breadcrumb-wrapper">
                 <ol class="breadcrumb align-items-center">
-                  <li class="breadcrumb-item"><a href="index.html">Главный</a>
-                  </li>
-                  <li class="breadcrumb-item"><a href="index.html">Возврат</a>
+                  <li class="breadcrumb-item"><a href="index.html">Home</a>
                   </li>
 
-                  <li class="breadcrumb-item active">ООО GAZPRO
                   </li>
                 </ol>
-              </div>
+              </div> -->
             </div>
           </div>
-          <a href="#" class="back-to"><i class="feather icon-chevron-left"></i> Назад</a>
         </div>
       </div>
-
       <div class="content-body">
-        <div class="card">
-            <div class="card-body">
-                <form class="form">
-                    <div class="form-body">
-                        <div class="row">
-                            <div class="col-md-4 col-12 mt-1">
-                                <div class="form-label-group">
-                                    <input type="text" id="name-column" class="form-control" placeholder="Название компании" required>
-                                    <label for="name-column">Название компании</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12 mt-1">
-                                <div class="form-label-group">
-                                    <input type="text" id="form-inn" class="form-control" placeholder="ИНН" required>
-                                    <label for="form-inn">ИНН</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12 mt-1">
-                                <div class="form-label-group">
-                                    <input type="text" id="form-number-selling" class="form-control" placeholder="Номер продажи" required>
-                                    <label for="form-number-selling">Номер продажи</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12 mt-1">
-                                <div class="form-label-group">
-                                    <input type="text" id="form-payment-method" class="form-control" placeholder="Тип оплаты:" required>
-                                    <label for="form-payment-method">Тип оплаты:</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12 mt-1">
-                                <div class="form-label-group">
-                                    <input type="date" id="form-data" class="form-control" placeholder="Дата" required>
-                                    <label for="form-data">Дата</label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12 mt-1">
-                                <div class="form-label-group">
-                                    <input type="text" id="form-date" class="form-control" placeholder="Адрес" required>
-                                    <label for="form-date">Адрес</label>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-1">
-                                <fieldset class="form-label-group">
-                                    <textarea class="form-control w-100" id="label-textarea" rows="5" placeholder="Комментарий">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel in in at rhoncus orci, ultrices. Amet lacus, in laoreet congue neque. Est enim gravida elit facilisis in integer nullam elementum. Suspendisse purus, amet aliquam eros, posuere. Vitae lacus, urna sem dui, ac mattis. Sed.</textarea>
-                                    <label for="label-textarea">Комментарий</label>
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <div class="card w-100">
+          <div class="card-body">
+             <form class="form pt-1">
+              <div class="form-body">
+                <div class="row d-flex justify-content-between">
+                      
+                      <div class="col-md-2">
+                          <div class="information mb-1">
+                              <span>Название клиента</span>
+                              <p>OOO GAZPRO</p>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="information mb-1">
+                              <span>ИНН </span>
+                              <p>8038208430</p>
+                          </div>
+                      </div>
 
-        <div class="card">
-            <div class="card-body">
-                <h4 class="mb-2">Список</h4>
-                <div class="table-responsive">
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <td>1. Стилус</td>
-                                <td>1 шт.</td>
-                                <td class="d-flex justify-content-end">2 000 000</td>
-                            </tr>
-                            <tr>
-                                <td>2. R2D2</td>
-                                <td>1 шт.</td>
-                                <td class="d-flex justify-content-end">2 000 000</td>
-                            </tr>
-                            <tr>
-                                <td>3. Генератор варп двигателя</td>
-                                <td>2 шт.</td>
-                                <td class="d-flex justify-content-end">2 000 000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                      <div class="col-md-2">
+                          <div class="information mb-1">
+                              <span>Адрес</span>
+                              <p>г. Ташкент, ул. Шахристанская, 2а</p>
+                          </div>
+                      </div> 
+
+                      <div class="col-md-2">
+                          <div class="information mb-1">
+                                <span>Дата создание</span>
+                                <p>25.06.2020</p>
+                          </div>
+                      </div>
+
+                      
+
+                      <div class="col-md-2">
+                          <div class="information mb-1">
+                                <span>Дата доставки </span>
+                                <p>25.06.2020</p>
+                          </div>
+                      </div>
+
+                      <div class="col-md-2">
+                          <div class="information mb-1">
+                                <span>Тип оплаты</span>
+                                <p>Наличные</p>
+                          </div>
+                      </div>
                 </div>
-                <div class="d-flex justify-content-end mt-3">
-                    <button class="btn btn-primary pro__btn waves-effect waves-light">Принять</button>
+              </div>
+            </form>
+            <hr>
+
+           
+            
+            
+            
+            
+            
+            <h4 class="mb-2">Список товаров</h4>
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>1. Стилус</td>
+                    <td>1 шт.</td>
+                    <td class="d-flex justify-content-end">2 000 000</td>
+                  </tr>
+                  <tr>
+                    <td>2. R2D2</td>
+                    <td>1 шт.</td>
+                    <td class="d-flex justify-content-end">2 000 000</td>
+                  </tr>
+                  <tr>
+                    <td>3. Генератор варп двигателя</td>
+                    <td>2 шт.</td>
+                    <td class="d-flex justify-content-end">2 000 000</td>
+                  </tr>
+                  <tr>
+                    <td>3. Генератор варп двигателя</td>
+                    <td>2 шт.</td>
+                    <td class="d-flex justify-content-end">2 000 000</td>
+                  </tr>
+                  <tr>
+                    <td>3. Генератор варп двигателя</td>
+                    <td>2 шт.</td>
+                    <td class="d-flex justify-content-end">2 000 000</td>
+                  </tr>
+                  <tr>
+                    <td>3. Генератор варп двигателя</td>
+                    <td>2 шт.</td>
+                    <td class="d-flex justify-content-end">2 000 000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-0">
+              <form class="pro__form mt-2 ml-2">
+                  <h3 class="mb-1">Выберите тип оплаты</h3>
+                  <fieldset >
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio1" checked>
+                          <label class="custom-control-label" for="customRadio1"> Наличные</label>
+                      </div>
+                  </fieldset>
+                  <fieldset >
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2" checked>
+                          <label class="custom-control-label" for="customRadio2">Терминал </label>
+                      </div>
+                  </fieldset>
+                  
+                   <fieldset>
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio3">
+                          <label class="custom-control-label" for="customRadio3">СЧФ</label>
+                      </div>
+                  </fieldset>
+                  <fieldset>
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio4">
+                          <label class="custom-control-label" for="customRadio4">Долг</label>
+                      </div>
+                  </fieldset>
+                  <fieldset>
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio5">
+                          <label class="custom-control-label" for="customRadio5">Электронный кошелек</label>
+                      </div>
+                  </fieldset>
+                  <fieldset>
+                      <div class="custom-control custom-radio"  data-toggle="modal" data-target="#myModal1">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio9">
+                          <label class="custom-control-label" for="customRadio9">Мультиоплата</label>
+                      </div>
+                  </fieldset>
+              </form>
+          </div>
+          <div class="col-md-6">
+            <div class="total__payment flex-md-row flex-column align-items-md-center align-items-right mt-1">
+              <label for="country">Итого cумма</label>
+              <input class="form-control border-0" type="text" id="country"  style="color: #2AC17E" name="country" value="12 000 000" readonly><br><br>
+            </div>
+          </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-outline-primary border-primary waves-effect waves-light">Генерировать СЧФ</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end flex-md-row flex-column mb-2">
+                      <button class="btn btn btn-outline-primary waves-effect waves-light mr-md-1 mb-md-0 mb-2">Отмена</button>
+                      <button class="btn btn-outline-primary pro__btn waves-effect waves-light">Готово</button>
+                    </div>
                 </div>
             </div>
+              <!-- Modal -->
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Генерировать СЧФ</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body justify-content-center d-block">
+                       <fieldset >
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio7" checked>
+                          <label class="custom-control-label" for="customRadio7"> С предоплатой</label>
+                      </div>
+                    </fieldset>
+                    <fieldset >
+                      <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio" id="customRadio8" checked>
+                          <label class="custom-control-label" for="customRadio8">Без предоплаты </label>
+                      </div>
+                    </fieldset>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button class="btn btn-outline-primary pro__btn waves-effect waves-light">Генерировать</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+              </div> 
+
+
+               <div class="modal fade" id="myModal1">
+                  <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Мультиоплата</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body justify-content-center d-block">
+                       <div class="pro__form mt-1 ml-auto mr-auto">
+                        <div class="forms mb-1 d-flex align-items-center justify-content-center">
+                            <label for="text" class="mr-2 font-weight-bold">К оплате</label>
+                            <input class="form-control border-0" type="text" id=""  style="color: #2AC17E" name="country" value="6 000 000 сум" readonly=""><br><br>
+                        </div>
+                        <div class="forms mb-1 d-flex align-items-center justify-content-center">
+                            <label for="text " class="mr-2 font-weight-bold">Наличные</label>
+                            <input class="form-control border-1" type="text" id=""  style="color: #2AC17E" name="country" value="" placeholder="Введите цену"><br><br>
+                        </div>
+                         <div class="forms mb-1 d-flex align-items-center justify-content-center">
+                            <label for="text " class="mr-2 font-weight-bold">Терминал</label>
+                            <input class="form-control border-1" type="text" id=""  style="color: #2AC17E" name="country" value="" placeholder="Введите цену"><br><br>
+                        </div>
+                        <div class="forms mb-1 d-flex align-items-center justify-content-center">
+                            <label for="text " class="mr-2 font-weight-bold">Кошелек</label>
+                            <input class="form-control border-1" type="text" id=""  style="color: #2AC17E" name="country" value="" placeholder="Введите цену"><br><br>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button class="btn btn-outline-primary waves-effect waves-light">Отмена</button>
+                        <button class="btn btn-outline-primary pro__btn waves-effect waves-light">Готово</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+              </div>  
+          </div>
         </div>
       </div>
     </div>

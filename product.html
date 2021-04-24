@@ -71,6 +71,9 @@
             <ul class="nav navbar-nav">
               <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
                   href="#"><i class="ficon feather icon-menu"></i></a></li>
+                  <li>
+                    <h2 class="mb-2 mt-xl-1 mt-2 text-black font-weight-bold">Товары</h2>
+                  </li>
             </ul>
           </div>
           <ul class="nav navbar-nav float-right">
@@ -372,14 +375,14 @@
       <div class="content-header row">
       </div>
 
-      <h2 class="mb-2 mt-1 text-primary font-weight-bold">Товары</h2>
+      
 
       <div class="content-body">
         <div class="card">
             <div class="card-body">
                 <div class="app__block_firefront flex-md-row flex-column">
                     <fieldset class="form-group position-relative">
-                        <input type="text" class="form-control" id="iconLeft2" placeholder="Поиск поставщика">
+                        <input type="text" class="form-control" id="iconLeft2" style="height: 48px"  placeholder="Поиск поставщика">
                         <div class="form-control-position">
                             <i class="feather icon-search"></i>
                         </div>
@@ -388,11 +391,16 @@
                       <button class="btn btn-outline-primary waves-effect waves-light mr-2 my-lg-0 my-1 pro__btn">Фильтр <i class="fa fa-sort-amount-desc icon__ml"></i></button>
                       <a href="product3.html" class="btn btn-outline-primary waves-effect waves-light mr-2 my-lg-0 my-1 pro__btn">Списать <i class="fa fa-list-alt icon__ml"></i></a>
                       <a href="product4.html" class="btn btn-outline-primary waves-effect waves-light mr-2 my-lg-0 my-1 pro__btn">Инвентаризация <i class="fa fa-clipboard icon__ml"></i></a>
-                      <a href="product2.html" class="btn btn-primary pro__btn mt-1 mt-md-0">Добавить товар <i class="feather icon-shopping-cart icon__ml"></i></a>
                     </div>
                 </div>
-                <hr> 
-                <h4 class="mb-1">Список</h4>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="d-flex align-items-center mb-1">Список</h4>
+                    <div class="d-flex justify-content-end">
+                       <p>По имени</p>  <i class="fad ml-1 fa-sort-down" style="font-size: 24px; cursor: pointer;"></i>
+                    </div>
+                </div>
+                    
                 <div class="table-responsive">
                   <table class="table">
                       <tbody>
